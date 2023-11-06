@@ -10,7 +10,7 @@
     "public-js": "uglifyjs public/src/assets/js/my-news-plugin-public.js -o public/assets/js/my-news-plugin-public.min.js -m",
     "watch-sass": "npm-run-all --parallel public-sass admin-sass",
     "watch-public-js": "chokidar 'public/src/assets/js/*.js' -c 'npm run public-js'",
-    "watch": "npm-run-all --parallel watch-public-js sass",
+    "watch": "npm-run-all --parallel watch-public-js watch-sass",
     "build-sass": "sass public/src/assets/sass/styles.scss:public/assets/css/styles.min.css --style compressed && sass admin/src/assets/sass/admin-styles.scss:admin/assets/css/admin-styles.min.css --style compressed",
     "build": "npm-run-all --parallel public-js build-sass"
   },

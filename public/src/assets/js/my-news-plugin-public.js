@@ -18,7 +18,6 @@
         let apiURL = mnp_object.api_url + mnp_object.api_date;
 
         $.ajax({
-          // url: "https://en.wikipedia.org/api/rest_v1/feed/featured/2022/11/11",
           url: apiURL,
           method: 'GET',
           dataType: 'json',
@@ -34,13 +33,15 @@
             } else if (self.elIndex >= 1) {
               sliceStart = sliceStart + multiplier;
               sliceEnd = sliceEnd + multiplier;
+
               news = news.slice(sliceStart, sliceEnd);
             }
+
 
             $(news).each( function ( index, article ) {
               let title = article.titles.normalized;
               let description = article.description;
-              let img = article.originalimage.source;
+              let img = article.originalimage;
               let extract = article.extract;
               let link = article.content_urls.desktop.page;
 
@@ -57,7 +58,9 @@
               }
 
               if (img) {
-                $(newsItem).append(`<img class="mnp-news-item__img" src="${img}" height="400">`);
+                $(newsItem).append(`<img class="mnp-news-item__img" src="${img.source}" height="400">`);
+              } else {
+                $(newsItem).append(`<img class="mnp-news-item__img" src="https://placehold.co/400x400?text=No+Image" height="400">`);
               }
 
               if (extract && link) {

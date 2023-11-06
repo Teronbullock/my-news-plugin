@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../src/assets/sass/02components/_news-item.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;;;AAGF;EACE;EACA;;;AAGF;EACE;EACA;;AAEA;EACE;EACA;;;AAIJ;EACE;;;AAGF;EACE;EACA;EACA;EACA;;AAEA;EACE","file":"styles.min.css"}
+{"version":3,"sourceRoot":"","sources":["../../src/assets/sass/02components/_news-item.scss"],"names":[],"mappings":"AAAA,eACE,sBACA,mBACA,gCAGF,sBACE,gBACA,qBAGF,wBACE,WACA,qBAEA,8BACE,0BACA,WAIJ,qBACE,qBAGF,+BACE,kBACA,cACA,sBACA,gCAEA,qCACE","file":"styles.min.css"}
