@@ -1,0 +1,35 @@
+.mnp-news-item {
+  padding-bottom: 1.5rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.mnp-news-item__title {
+  margin: 1.5rem 0;
+  text-decoration: none;
+}
+
+.mnp-news-item__title a {
+  color: #000;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    color: blue;
+  }
+}
+
+.mnp-news-item__desc {
+  margin: 0rem 0 1.5rem;
+}
+
+.mnp-news-item__body-read-more {
+  margin-top: 1.5rem;
+  display: block;
+  color: blue !important;
+  text-decoration: none !important;
+
+  &:hover {
+    text-decoration: underline !important;
+  }
+}
